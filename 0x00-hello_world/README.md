@@ -1,1 +1,1 @@
-#0x00-hello_world directory README file
+# 0x00hello_world readme file
