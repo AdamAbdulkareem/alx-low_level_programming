@@ -6,7 +6,7 @@
 int main(void)
 {
 	char lowerChar;
-		for (lowerChar = 'a'; lowerChar <= 'z'; letter++)
+		for (lowerChar = 'a'; lowerChar <= 'z'; lowerChar++)
 		{
 		if (letter != 'e' && letter != 'q')
 			putchar(letter);
