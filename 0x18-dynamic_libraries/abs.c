@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-  * _abs- A function
-  * @n: An input character
-  * Return: An integer
-  */
+ * _abs - a function that prints an integer
+ * @n: An input character
+ * Return: Nothing
+ */
 int _abs(int n)
 {
+
 }
