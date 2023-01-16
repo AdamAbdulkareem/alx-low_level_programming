@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-  * _atoi - A function
-  * @s: An input character
-  * Return: An integer
-  */
+ * _atoi - a function that prints a string
+ * @s: An input character
+ * Return: Nothing
+ */
 int _atoi(char *s)
 {
+
 }
