@@ -1,10 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 /**
-  * _puts - A function
-  * @s: An input character
-  * Return: Nothing
-  */
-
-void _puts(char *s)
+ * main - entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
 {
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
