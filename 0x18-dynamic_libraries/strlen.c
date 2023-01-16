@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 #include <stdio.h>
 
@@ -15,3 +16,5 @@ int _strlen(char *s)
 		len++;
 	return (len);
 }
+=======
+>>>>>>> parent of c39ce3c... Modify files
