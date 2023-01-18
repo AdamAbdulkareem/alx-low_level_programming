@@ -19,4 +19,6 @@ size_t print_dlistint(const dlistint_t *h);
 const dlistint_t *pointer;
 size_t dlistint_len(const dlistint_t *h);
 const dlistint_t *pointer1;
+dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+dlistint_t *newnode;
 #endif
