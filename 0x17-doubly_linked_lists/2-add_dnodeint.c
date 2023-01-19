@@ -8,13 +8,23 @@
   * @n: An input character
   * Return: a linked list
  */
-dlistint_t *add_dnodeint(dlistint_t **head, const int n){
-    head = malloc(sizeof(dlistint_t));
-    newnode = malloc(sizeof(dlistint_t));
-    newnode->n = n;
-    head->prev = newnode;
-    newnode->next = head;
-    newnode->prev = NULL;
-    head = newnode;
-}	
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+{
+	dlistint_t *newnode;
 
+	newnode = malloc(sizeof(dlistint_t));
+
+	newnode->n = n;
+
+	newnode->prev = NULL;
+	newnode->next = NULL;
+	if (*head == NULL)
+	{
+		*head = newnode;
+		return (*head);
+	}
+	(*head)->prev = newnode;
+	newnode->next = *head;
+	*head = newnode;
+	return (*head);
+}
