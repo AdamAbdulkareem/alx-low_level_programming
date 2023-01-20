@@ -24,4 +24,5 @@ dlistint_t *newnode;
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 dlistint_t *newnode1;
 dlistint_t *pointer3;
+void free_dlistint(dlistint_t *head);
 #endif
