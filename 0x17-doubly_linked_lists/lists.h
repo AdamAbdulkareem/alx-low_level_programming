@@ -21,4 +21,7 @@ size_t dlistint_len(const dlistint_t *h);
 const dlistint_t *pointer1;
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 dlistint_t *newnode;
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+dlistint_t *newnode1;
+dlistint_t *pointer3;
 #endif
