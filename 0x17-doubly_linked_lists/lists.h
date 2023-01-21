@@ -29,4 +29,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 dlistint_t *indicator;
 int sum_dlistint(dlistint_t *head);
 dlistint_t *point;
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
+dlistint_t *addnode;
+dlistint_t *arrow;
+unsigned int counter;
 #endif
