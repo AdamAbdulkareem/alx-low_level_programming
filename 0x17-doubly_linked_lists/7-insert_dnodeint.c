@@ -23,7 +23,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		if (arrow->next == NULL)
 		{
-			return NULL;
+			return (NULL);
 		}
 		counter++;
 		arrow = arrow->next;
@@ -32,6 +32,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	arrow->prev = addnode;
 	addnode->n = n;
 	addnode->next = arrow;
-	printf("%d\n", arrow->prev->n);
 	return (arrow->prev);
 }
