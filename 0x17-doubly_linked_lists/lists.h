@@ -34,4 +34,9 @@ dlistint_t *addnode;
 dlistint_t *arrow;
 dlistint_t *arrow2;
 unsigned int counter;
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+dlistint_t *pointer_1;
+dlistint_t *pointer_2;
+dlistint_t *pointer_3;
+unsigned int count; 
 #endif
