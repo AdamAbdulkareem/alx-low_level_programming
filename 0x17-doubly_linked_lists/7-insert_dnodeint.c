@@ -23,6 +23,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		return (NULL);
 	}
+	if (arrow == NULL)
+	{
+		arrow = addnode;
+
+		return (addnode);
+	}
 	while (counter != (idx - 1))
 	{
 		if (arrow->next == NULL)
@@ -38,5 +44,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	arrow2->prev = addnode;
 	addnode->next = arrow2;
 	addnode->n = n;
-	return (arrow->next);
+	return (addnode);
 }
