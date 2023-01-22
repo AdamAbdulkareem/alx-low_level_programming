@@ -32,5 +32,6 @@ dlistint_t *point;
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 dlistint_t *addnode;
 dlistint_t *arrow;
+dlistint_t *arrow2;
 unsigned int counter;
 #endif
