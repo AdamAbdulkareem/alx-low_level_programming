@@ -1,35 +1,32 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer.
- * @n: input integer.
- * Return: no return.
+ * *_strcat - function commute srtings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
+ * Return: return value of dest
  */
-void print_number(int n)
+
+char *_strcat(char *dest, char *src)
 {
-	unsigned int m, d, count;
+	int i;
+	int j;
 
-	if (n < 0)
-	{
-		_putchar(45);
-		m = n * -1;
-	}
-	else
-	{
-		m = n;
-	}
+	i = 0;
+	j = 0;
 
-	d = m;
-	count = 1;
-
-	while (d > 9)
+	while (dest[i] != '\0')
 	{
-		d /= 10;
-		count *= 10;
+		i++;
 	}
 
-	for (; count >= 1; count /= 10)
+	while (src[j] != '\0')
 	{
-		_putchar(((m / count) % 10) + 48);
+		dest[i] = src[j];
+		j++;
+		i++;
 	}
+
+	dest[i] = '\0';
+	return (dest);
 }
