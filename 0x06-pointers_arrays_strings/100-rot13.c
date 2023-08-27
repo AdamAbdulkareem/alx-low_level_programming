@@ -1,32 +1,28 @@
 #include "main.h"
-
 /**
- * *_strcat - function commute srtings
- * @dest: param pointer to a char
- * @src: param pointer to a char
- * Return: return value of dest
+ * rot13 - Encodes a string into rot13
+ * @a: String
+ *
+ * Return: String as a pointer
  */
-
-char *_strcat(char *dest, char *src)
+char *rot13(char *a)
 {
-	int i;
 	int j;
+	int i = 0;
+	char initial[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char final[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	i = 0;
-	j = 0;
-
-	while (dest[i] != '\0')
+	while (*(a + i))
 	{
-		i++;
+		for (j = 0; j <= 52; j++)
+		{
+			if (*(a + i) == initial[j])
+			{
+				*(a + i) = final[j];
+				break;
+			}
+		}
+	i++;
 	}
-
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		j++;
-		i++;
-	}
-
-	dest[i] = '\0';
-	return (dest);
+	return (a);
 }
