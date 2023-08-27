@@ -1,0 +1,15 @@
+--- 100-set_string.c	2023-05-25 00:17:11.000000000 -0700
++++ /dev/null	2023-08-17 22:55:42.457026899 -0700
+@@ -1,12 +0,0 @@
+-#include "main.h"
+-
+-/**
+- * set_string - sets value of a pointer to a char
+- * @s: double pointer to a string
+- * @to: pointer to the string to set s to
+- * Return: Description of the returned value
+- */
+-void set_string(char **s, char *to)
+-{
+-	*s = to;
+-}
